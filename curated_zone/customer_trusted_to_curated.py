@@ -30,7 +30,7 @@ DEFAULT_DATA_QUALITY_RULESET = """
 AmazonS3_node1770013264742 = glueContext.create_dynamic_frame.from_catalog(database="stedi", table_name="customer_trusted", transformation_ctx="AmazonS3_node1770013264742")
 
 # Script generated for node Amazon S3
-AmazonS3_node1770013262761 = glueContext.create_dynamic_frame.from_catalog(database="stedi", table_name="accelerometer_landing", transformation_ctx="AmazonS3_node1770013262761")
+AmazonS3_node1770013262761 = glueContext.create_dynamic_frame.from_catalog(database="stedi", table_name="accelerometer_trusted", transformation_ctx="AmazonS3_node1770013262761")
 
 # Script generated for node Join
 Join_node1770013329753 = Join.apply(frame1=AmazonS3_node1770013264742, frame2=AmazonS3_node1770013262761, keys1=["email"], keys2=["user"], transformation_ctx="Join_node1770013329753")
